@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symulator Życia 2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <h1>Symulator Życia 2.0</h1>
+
+    <div id="stats">
+        <p>Energia: <span id="energy">50</span></p>
+        <p>Wiedza: <span id="knowledge">0</span></p>
+        <p>Pieniądze: <span id="money">0</span> zł</p>
+        <p>Stres: <span id="stress">0</span></p>
+        <p>Zdrowie: <span id="health">100</span></p>
+        <p>Poziom Kariery: <span id="careerLevel">1</span></p>
+        <p>Wiek: <span id="age">18</span> lat</p>
+    </div>
+
+    <div id="actions">
+        <button onclick="study()">Ucz się</button>
+        <button onclick="work()">Pracuj</button>
+        <button onclick="rest()">Odpoczywaj</button>
+        <button onclick="shop()">Zakupy</button>
+        <button onclick="invest()">Inwestuj</button>
+    </div>
+
+    <div id="modMenu" style="display:none;">
+        <h2>Mod Menu</h2>
+        <button onclick="addEnergy(50)">+50 Energia</button>
+        <button onclick="addKnowledge(50)">+50 Wiedza</button>
+        <button onclick="addMoney(500)">+500 Pieniędzy</button>
+        <button onclick="reduceStress(50)">-50 Stresu</button>
+        <button onclick="heal(50)">+50 Zdrowia</button>
+        <button onclick="instantCareer()">Awans Kariery</button>
+        <button onclick="disableExpenses()">Wyłącz Wydatki</button>
+        <button onclick="addSuperFriend()">Dodaj Super Przyjaciela</button>
+        <button onclick="healAll()">Ulecz wszystkie choroby</button>
+        <button onclick="jackpot()">Jackpot Inwestycji</button>
+    </div>
+
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
